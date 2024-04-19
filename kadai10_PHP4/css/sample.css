@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 28px;
+    background-color: #f5deb3;
+  }
+
+  /* 画像の固定 */
+#header img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; /* 他の要素よりも背面に配置 */
+}
+
+/* フォームのスタイル */
+.container {
+  margin-top: 500px; /* 画像の高さ分だけ下にずらす */
+  padding: 20px;
+  background-color: #f5deb3;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+
+  h1 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    text-align: left;
+    font-size: 120px;
+    color: #6495ed;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+  }
+
+  h3{
+    font-size:larger;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  label{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2
+  }
+
+  .spacer {
+    margin-right: 20px; /* 下側に20pxのマージンを追加 */
+}
+
+.contact{
+  margin-top: 30px;
+}
+
+.sublabel{
+  margin-right: 20px;
+  font-size:smaller;
+}
+
+.sublabel2{
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size:smaller;
+}
+  
+/* url入力部分 */
+#url::placeholder {
+  color: #999; 
+  opacity: 0.5; /* プレースホルダーテキストの透明度 */
+}
+#wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+
+
+  #save {
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    cursor: pointer;
+  }
+
+  #save:hover{
+    background: #add8e6;
+    color: #fff;
+  }
+
+  .save_btn{
+    margin:15px;
+  }
+  
+  .tobtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #6495ed;
+    color: white;
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: #c0c0c0;
+  }
+
+  /* select.php分 */
+ 
+  .select{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 28px;
+    background-color: #f0ffff;
+
+  }
+
+  h2{
+font-family: 'Roboto Condensed', sans-serif;
+    font-weight:bolder;
+    font-size:48px;
+    display: flex;
+    justify-content: center;
+    color:#db7093;
+  }
+
+  .list_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 50px; 
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .list {
+    border: 2px solid #c0c0c0;
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+  font-family: 'Quicksand', sans-serif;
+  }
+
+  .link{
+    font-size:16px;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+  }
+
+  .btnwrap{
+    display:flex;
+    flex-direction: row-reverse;
+  }
+ 
+  /* detail.php分 */
+
+  .container2 {
+    margin-top: 100px; 
+    padding: 20px;
+     }
+  
+ /* profile.php分 */
+
+ .profile{
+  background-color: white;
+ }
+
+ .profile_header{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ line-height: 0.8;
+ }
+
+ .profile_container{
+  display: flex;
+  justify-content: space-around;
+  margin:8%;
+ }
+
+ .profile_text{
+  font-size: 16px;
+  margin-left: 80px;
+  font-family: "Sawarabi Gothic", sans-serif;
+ }
+ 
+ .profile_image img{
+  width: 200px;
+  height: 200px;
+ }
+
+h4{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_wrap{
+  border:2px solid #c0c0c0;
+  margin: 15%;
+  padding:20px;
+  }
+
+.contact_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+.contact_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+/* 写真の表示 */
+.works{
+  display: grid;
+  gap:2rem 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  }
+
+.work_image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.work_image:hover img {
+  transform: scale(1.1);
+}
+
+/* モーダル */
+/* モーダルウィンドウのスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-button {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ログイン画面 */
+.loginbody{
+  background-color:#f0f8ff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  min-height: 100vh; 
+}
+
+.loginform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1; 
+  padding: 40px; 
+  border-radius: 5px; 
+}
+
+/* user登録画面 */
+.userheader{
+  background-color: #ffffe0;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left:20px;
+}
+
+.menu a{
+  margin-right: 100px;
+}
+
+/* ログアウトボタン */
+.logoutbtn{
+  font-size: 18px;
+  color: #dc143c;
+}
+
+/* ログイン者の名前表示 */
+.headername{
+  font-size:16px;
+  margin-left: 80px;
+}
